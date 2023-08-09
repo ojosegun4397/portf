@@ -3,12 +3,388 @@
 				<head> 
                       <title> portfolio </title>
 					  <meta charset="UTF-8">
-					  <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
-					  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-					  <link href="assign.css" rel="stylesheet" type="text/css">
+					        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+					        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+					     <!-- <link href="assign.css" rel="stylesheet" type="text/css"> -->
 					  <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
 					  <link href="animate/animate.min.css" rel="stylesheet">
 				     <link rel="icon" type="image/png"  href="apple.png">
+<style>
+
+                          
+  
+
+#banner{
+	background-image:url("picture/ovar1.jpg");
+	background-attachment:fixed;
+	
+	
+}
+
+#overlay{
+	background-color:#010123;
+}
+
+.nav{
+	color:white;
+}
+
+.nav:hover{
+border: 2px solid rgb(3, 53, 53);
+}
+
+#great{justify-content: justify;}
+
+
+.gold{margin-top:150px;
+text-align:center;}
+
+.love{margin-top:150px;
+text-align:center;}
+
+#marine{text-align:center;}
+
+.joy{width:2px;}
+
+.both{border:2px solid white;
+box-shadow:5px -5px 5px 0px white;
+border-radius:20px;}
+
+
+
+.both:hover{color: red;
+background-color:#008080;
+
+}
+
+
+
+.good{background-color:#333333;
+box-shadow:5px -5px 5px 0px white;
+border-radius:20px;
+}
+
+
+
+.bro{border-radius:50%;}
+
+
+.true{
+	border-radius:50%;
+  
+	height:150px;
+  border:3px solid #008080;
+}
+.lie{display:flex; 
+ justify-content:center; 
+ 
+} 
+
+.look{color:white;}
+
+.look:hover{
+color:	#008080;
+	
+
+}
+
+.drip{text-decoration: none;}
+
+#dent{
+	text-shadow:5px -5px 5px 0px white;
+
+}
+
+
+.raid{
+	margin-left:-40px;
+	
+}
+
+
+.flipper{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 80rem;
+	
+  }
+  
+  .fboxes{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+		  
+  }
+  
+  .fbox{
+	width: calc(25% - 2rem);
+	margin: 1rem;
+	cursor: pointer;
+	
+  }
+  
+  .fb-contain{
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	  -webkit-perspective: 1000px;
+			  perspective: 1000px;
+  }
+  
+  .fb-front,
+  .fb-back{
+	background-size: cover;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+	border-radius: 10px;
+	  background-position: center;
+	  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  -webkit-backface-visibility: hidden;
+			  backface-visibility: hidden;
+	  text-align: center;
+	  min-height: 280px;
+	  height: auto;
+	  border-radius: 10px;
+	  color: #fff;
+	  font-size: 1.5rem;
+  }
+  
+  .fb-back{
+	background: #102770;
+	/* background: grey; */
+	
+  }
+  
+  .fb-front:after{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 1;
+	  width: 100%;
+	  height: 100%;
+	  content: '';
+	  display: block;
+	  opacity: .4;
+	  background-color: #000;
+	  -webkit-backface-visibility: hidden;
+			  backface-visibility: hidden;
+	  border-radius: 10px;
+  }
+  .fb-contain:hover .fb-front,
+  .fb-contain:hover .fb-back{
+	  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+  
+  .fb-back{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+  }
+  
+  .fb-inner{
+	  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+			  transform: translateY(-50%) translateZ(60px) scale(0.94);
+	  top: 50%;
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	  padding: 2rem;
+	  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+	  outline: 1px solid transparent;
+	  -webkit-perspective: inherit;
+			  perspective: inherit;
+	  z-index: 2;
+  }
+  
+  .fb-contain .fb-back{
+	  -webkit-transform: rotateY(180deg);
+			  transform: rotateY(180deg);
+	  -webkit-transform-style: preserve-3d;
+			  transform-style: preserve-3d;
+  }
+  
+  .fb-contain .fb-front{
+	  -webkit-transform: rotateY(0deg);
+			  transform: rotateY(0deg);
+	  -webkit-transform-style: preserve-3d;
+			  transform-style: preserve-3d;
+  }
+  
+  .fb-contain:hover .fb-back{
+	-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+  }
+  
+  .fb-contain:hover .fb-front{
+	-webkit-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+  }
+  
+  .fb-front .fb-inner p{
+	font-size: 18px;
+	position: relative;
+		line-height: 33px;
+	font-weight: 700;
+	font-family: "Libre Baskerville";
+  }
+  
+  
+  .fb-front .fb-inner span{
+	color: rgba(255,255,255,0.7);
+	font-family: 'Montserrat';
+	font-weight: 300;
+  }
+  .fb-back p{
+	  font-size:14px;
+  }
+  .learn {
+	  font-size: 14px;
+	  background: #fff;
+	  color: #313131;
+	  width: 55%;
+	  margin: auto;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  line-height: 32px;
+	  font-weight: 600;
+  }
+  .xsm{
+		font-size:12px !important;
+	}
+  @media screen and (max-width: 64rem){
+	.fbox{
+	  width: calc(33.333333% - 2rem);
+	}
+  }
+  
+  @media screen and (max-width: 48rem){
+	.fbox{
+	  width: calc(50% - 2rem);
+	}
+  }
+  
+  @media screen and (max-width: 32rem){
+	.fbox{
+	  width: 50%;
+	  margin: 0 0 1rem 0;
+	}
+	.fb-back p{
+	  font-size:10px;
+	}
+	.xsm{
+		font-size:8px !important;
+	}
+	.fb-front .fb-inner p{
+		font-size: 11px;
+	  line-height: 22px;
+	}
+	.fb-front, .fb-back{
+		min-height: 200px;
+	}
+	.fb-contain {
+	  width: 90%;
+	  margin: auto;
+	  }
+	.flipper{
+		width:100%;
+		margin:0;
+	}
+	.fb-inner{
+	   padding:1rem; 
+	}
+	.learn {
+	  font-size: 11px;
+	  line-height: 18px;
+  }
+  }
+  .zoom {
+	transition: transform .2s;
+  }
+  
+  .zoom:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1); /* IE 9 */ 
+	transform: scale(1.1);
+  }
+
+  
+  .heading1{
+    margin-top:60px;
+    font-family:'Arial Black', Helvetica, sans-serif;
+    font-size:larger;
+    animation-name:bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.beaut{
+    
+    margin-top:30px;
+    margin-left:20px;
+    margin-right:20px;
+    padding:20px;
+    /* border-radius: 20px; */
+    box-shadow: 4px 3px 5px rgb(33, 29, 29);
+    
+    
+}
+
+.foo{
+	display:flex;
+	flex-wrap:wrap;
+	
+	justify-content: center;
+
+}
+
+
+.bt{
+    
+    margin-top:30px;
+    margin-left:20px;
+    margin-right:20px;
+    padding:20px;
+	width:25%;
+    /* border-radius: 20px; */
+    box-shadow: 4px 3px 5px rgb(33, 29, 29);
+   
+    
+}
+
+.dom{
+	background-color: white;
+}
+
+.dom:hover{
+	background-color:rgb(3, 188, 204);
+}
+
+
+
+
+
+
+					 </style>
 					  
 				</head>
 	<body id="bod" style="background-color: white;"> 
